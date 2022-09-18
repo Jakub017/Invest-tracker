@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+:root {
+    font-size: 10px;
+    --main-color: #8DBFE0;
+    --secondary-color: #8FB2F7;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+}
+
+h1.section-title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 4px 2px -2px #ddd;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.colored {
+    color: var(--main-color);
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style-type: none;
+    font-size: 1.6rem;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-item {
+    padding: 1.5rem;
+    border-radius: 4rem;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    background-color: rgba(221, 221, 221, 0.4);
+}
+
+.menu-item.last {
+    background-color: var(--main-color);
+    padding: 1.5rem;
+    border-radius: 4rem;
+    color: #fff;
+}
+
+.menu-item.last a {
+    color: #fff;
+}
+
+.welcome {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+.welcome-text h2 {
+    font-size: 3.7rem;
+    margin: 0;
+    line-height: 115%;
+}
+
+.welcome-text p {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.welcome-image {
+    display: none;
+}
+
+.welcome-image img {
+    width: 100%;
+    max-width: 500px;
+    animation: fly 1.5s ease-out 0s alternate infinite none running;
+}
+
+.welcome-buttons {
+    margin-top: 2.5rem;
+}
+
+.welcome-buttons a {
+    text-decoration: none;
+    border: 2px solid var(--main-color);
+    border-radius: 4rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.7rem;
+    transition: 0.3s;
+}
+
+.welcome-buttons a:first-child {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.welcome-buttons a:first-child:hover {
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+.welcome-buttons a:last-child {
+    color: var(--main-color);
+}
+
+.welcome-buttons a:last-child:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.track {
+    position: absolute;
+    padding: 2rem;
+    max-width: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5rem;
+    width: 100%;
+}
+
+.track h4 {
+    font-size: 2rem;
+}
+
+.menu-list {
+    display: none;
+}
+
+
+
+
+
+@media (min-width: 992px) {
+    .welcome {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .welcome-text {
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .welcome-text h1 {
+        font-size: 6rem;
+    }
+
+    .welcome-text h2 {
+        font-size: 4rem;
+    }
+
+    .welcome-image {
+        display: block;
+    }
+
+    .menu-list {
+        display: flex;
+    }
+}
+
+
+@keyframes fly {
+    0% {
+        transform: translateY(-15px);
+    }
+
+    3% {
+        transform: translateY(-14px);
+    }
+
+    6% {
+        transform: translateY(-13px);
+    }
+
+    9% {
+        transform: translateY(-12px);
+    }
+
+    12% {
+        transform: translateY(-11px);
+    }
+
+    15% {
+        transform: translateY(-10px);
+    }
+
+    18% {
+        transform: translateY(-9px);
+    }
+
+    21% {
+        transform: translateY(-8px);
+    }
+
+    24% {
+        transform: translateY(-7px);
+    }
+
+    27% {
+        transform: translateY(-6px);
+    }
+
+    30% {
+        transform: translateY(-5px);
+    }
+
+    33% {
+        transform: translateY(-4px);
+    }
+
+    36% {
+        transform: translateY(-3px);
+    }
+
+    39% {
+        transform: translateY(-2px);
+    }
+
+    42% {
+        transform: translateY(-1px);
+    }
+
+    45% {
+        transform: translateY(0px);
+    }
+
+    48% {
+        transform: translateY(1px);
+    }
+
+    51% {
+        transform: translateY(2px);
+    }
+
+    54% {
+        transform: translateY(3px);
+    }
+
+    57% {
+        transform: translateY(4px);
+    }
+
+    60% {
+        transform: translateY(5px);
+    }
+
+    63% {
+        transform: translateY(6px);
+    }
+
+    66% {
+        transform: translateY(7px);
+    }
+
+    69% {
+        transform: translateY(8px);
+    }
+
+    72% {
+        transform: translateY(9px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+
+    78% {
+        transform: translateY(11px);
+    }
+
+    81% {
+        transform: translateY(12px);
+    }
+
+    84% {
+        transform: translateY(13px);
+    }
+
+    87% {
+        transform: translateY(14px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
