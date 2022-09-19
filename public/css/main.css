@@ -8,8 +8,8 @@
 
 :root {
     font-size: 10px;
-    --main-color: #8DBFE0;
-    --secondary-color: #8FB2F7;
+    --main-color: #145da0;
+    --secondary-color: #2d8bbf;
 }
 
 header {
@@ -17,19 +17,59 @@ header {
     position: relative;
 }
 
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.layer1 {
+    background-image: url('../img/waves.svg');
+}
+
+@media (min-width: 992px) {
+    .svg-wrapper {
+        max-height: 300px;
+    }
+
+    .desktop-svg {
+        display: block;
+    }
+
+    .mobile-svg {
+        display: none;
+    }
+}
+
 h1.section-title {
     font-size: 4rem;
     text-align: center;
+    color: #fff;
 }
 
 h2 {
     font-size: 2.2rem;
 }
 
+h5.section-subtitle {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
 nav {
     width: 100%;
     height: 80px;
-    box-shadow: 0 4px 2px -2px #ddd;
+    border-bottom: 1px solid #ddd;
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -122,7 +162,6 @@ nav {
 }
 
 .welcome-text p {
-    font-size: 1.6rem;
     margin: 0;
 }
 
@@ -161,6 +200,7 @@ nav {
 
 .welcome-buttons a:last-child {
     color: var(--main-color);
+    background-color: #fff;
 }
 
 .welcome-buttons a:last-child:hover {
@@ -187,37 +227,89 @@ nav {
 }
 
 
+/* How it works section */
+#how {
+    position: relative;
+    padding: 2rem;
+}
 
+.section-background {
+    background-color: var(--main-color);
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
+.how-tiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
 
-@media (min-width: 992px) {
-    .welcome {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+.how-tile {
+    max-width: 350px;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid rgba(221, 221, 221, 0.8);
+    position: relative;
+}
 
-    .welcome-text {
-        text-align: left;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
+.how-tile img {
+    max-height: 210px;
+}
 
-    .welcome-text h1 {
-        font-size: 6rem;
-    }
+.how-name {
+    margin-bottom: 1.5rem;
+}
 
-    .welcome-text h2 {
-        font-size: 4rem;
-    }
+.tile-number {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    border: 4px solid var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+}
 
-    .welcome-image {
-        display: block;
-    }
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
-    .menu-list {
-        display: flex;
-    }
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 150px;
+}
+
+.wave .shape-fill {
+    fill: #8DBFE0;
 }
 
 
@@ -344,5 +436,50 @@ nav {
 
     100% {
         transform: translateY(15px);
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+    .spacer {
+        height: 280px;
+    }
+}
+
+@media (min-width: 576px) {
+    .wave svg {
+        height: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .welcome {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .welcome-text {
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .welcome-text h1 {
+        font-size: 6rem;
+    }
+
+    .welcome-text h2 {
+        font-size: 4rem;
+    }
+
+    .welcome-image {
+        display: block;
+    }
+
+    .menu-list {
+        display: flex;
     }
 }
