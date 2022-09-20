@@ -2,20 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans',
+    font-family: 'Poppins',
         sans-serif;
+    scroll-behavior: smooth;
+    color: var(--black);
 }
 
 :root {
     font-size: 10px;
     --main-color: #145da0;
-    --secondary-color: #2d8bbf;
+    --secondary-blue: #2d8bbf;
+    --black: #1A202C;
 }
 
 header {
     height: 100vh;
     position: relative;
 }
+
+h1.section-title {
+    color: var(--black);
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h5.section-subtitle {
+    color: var(--black);
+}
+
+
+
+
+
+
 
 .spacer {
     aspect-ratio: 960/300;
@@ -29,7 +52,7 @@ header {
 }
 
 .layer1 {
-    background-image: url('../img/waves.svg');
+    background-image: url('../img/wave.svg');
 }
 
 @media (min-width: 992px) {
@@ -46,20 +69,19 @@ header {
     }
 }
 
-h1.section-title {
-    font-size: 4rem;
-    text-align: center;
+
+
+#how h1.section-title {
     color: #fff;
 }
 
-h2 {
-    font-size: 2.2rem;
+#how h5.section-subtitle {
+    color: #eee;
 }
 
 h5.section-subtitle {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
-    color: #fff;
 }
 
 p {
@@ -231,6 +253,7 @@ nav {
 #how {
     position: relative;
     padding: 2rem;
+    padding-bottom: 7rem;
 }
 
 .section-background {
@@ -309,8 +332,38 @@ nav {
 }
 
 .wave .shape-fill {
-    fill: #8DBFE0;
+    fill: var(--main-color);
 }
+
+
+/* Features section start */
+
+.features-wrapper {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 300px;
+    gap: 1rem;
+}
+
+.feature-description {
+    color: #A0AEC0;
+    font-weight: 500;
+}
+
+/* Features section end */
 
 
 @keyframes fly {
@@ -481,5 +534,9 @@ nav {
 
     .menu-list {
         display: flex;
+    }
+
+    .features-wrapper {
+        gap: 8rem;
     }
 }
