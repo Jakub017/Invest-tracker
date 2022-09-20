@@ -68,35 +68,35 @@
         </div> -->
         <div class="spacer layer1"></div>
     </header>
-    <div id="how">
+    <section id="how">
         <div class="section-background"></div>
         <h5 class="section-subtitle">How it works</h5>
         <h1 class="section-title">There are three simple steps</h1>
         <div class="how-tiles">
             <div class="how-tile">
                 <div class="tile-number">1</div>
-                <img src="{{ asset('img/add_your_investments.png') }}" alt="">
+                <img src="{{ asset('img/how/add_your_investments.png') }}" alt="">
                 <h2 class="how-name">Add all your investments</h2>
                 <p>Add all the investments you have in your portfolio - gold, silver, bonds or cryptocurrencies.
                 </p>
             </div>
             <div class="how-tile">
                 <div class="tile-number">2</div>
-                <img src="{{ asset('img/update_sales_and_purchases.png') }}" alt="">
+                <img src="{{ asset('img/how/update_sales_and_purchases.png') }}" alt="">
                 <h2 class="how-name">Update only purchases or sales</h2>
                 <p>Only update new purchases or sales. Prices update in real time and are in line with the stock
                     exchanges.</p>
             </div>
             <div class="how-tile">
                 <div class="tile-number">3</div>
-                <img src="{{ asset('img/watch_market_behavior.png') }}" alt="">
+                <img src="{{ asset('img/how/watch_market_behavior.png') }}" alt="">
                 <h2 class="how-name">Watch the market behavior</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum dignissimos dolore.
                     Mollitia debitis consequuntur sequi!.</p>
             </div>
         </div>
-    </div>
-    <div id="features">
+    </section>
+    <section id="features">
         <h5 class="section-subtitle">Features</h5>
         <h1 class="section-title">Main <span class="colored">features</span></h1>
         <div class="features-wrapper">
@@ -127,17 +127,19 @@
                 </div>
             </div>
             <div class="feature">
-                <div class="feature-image"><img src="{{ asset('img/features/up_to_date.png') }}" alt="Up to date"></div>
+                <div class="feature-image"><img src="{{ asset('img/features/company_shares.png') }}" alt="Up to date">
+                </div>
                 <div class="feature-text">
-                    <h2 class="feature-title">Always up to date</h2>
+                    <h2 class="feature-title">Company shares</h2>
                     <p class="feature-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit,
                         vitae fugiat iure eveniet possimus.</p>
                 </div>
             </div>
             <div class="feature">
-                <div class="feature-image"><img src="{{ asset('img/features/up_to_date.png') }}" alt="Up to date"></div>
+                <div class="feature-image"><img src="{{ asset('img/features/easy_to_use.png') }}" alt="Up to date">
+                </div>
                 <div class="feature-text">
-                    <h2 class="feature-title">Always up to date</h2>
+                    <h2 class="feature-title">Easy to use</h2>
                     <p class="feature-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit,
                         vitae fugiat iure eveniet possimus.</p>
                 </div>
@@ -151,7 +153,61 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="testimonials">
+        <!-- <div class="custom-shape-divider-bottom-1663711324">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div> -->
+        <div class="custom-shape-divider-bottom-1663711479">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <h5 class="section-subtitle">Testimonials</h5>
+        <h1 class="section-title">What do <span class="colored">our clients</span> say about us? </h1>
+        <div class="testimonials-wrapper">
+            <div class="testimonial-tile">
+                <img src="{{ asset('img/testimonials/quote.png') }}" alt="">
+                <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+                    cupiditate tempore quod odit, officia ut perferendis aliquam earum! Accusamus odio quibusdam ipsam
+                    ratione sequi molestiae tempore voluptate nostrum voluptatum amet.</p>
+                <div class="testimonial-author">
+                    <h3 class="testimonial-name">John Doe</h3>
+                    <h6 class="testimonial-status">Investor in precious metals</h6>
+                </div>
+            </div>
+            <div class="testimonial-tile">
+                <img src="{{ asset('img/testimonials/quote.png') }}" alt="">
+                <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+                    cupiditate tempore quod odit, officia ut perferendis aliquam earum! Accusamus odio quibusdam ipsam
+                    ratione sequi molestiae tempore voluptate nostrum voluptatum amet.</p>
+                <div class="testimonial-author">
+                    <h3 class="testimonial-name">John Doe</h3>
+                    <h6 class="testimonial-status">Investor in precious metals</h6>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

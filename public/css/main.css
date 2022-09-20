@@ -20,6 +20,11 @@ header {
     position: relative;
 }
 
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 h1.section-title {
     color: var(--black);
     font-size: 4rem;
@@ -33,6 +38,8 @@ h2 {
 h5.section-subtitle {
     color: var(--black);
 }
+
+
 
 
 
@@ -253,7 +260,6 @@ nav {
 #how {
     position: relative;
     padding: 2rem;
-    padding-bottom: 7rem;
 }
 
 .section-background {
@@ -345,7 +351,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 4rem;
+    margin-top: 3rem;
     gap: 4rem;
     margin-bottom: 2rem;
 }
@@ -365,6 +371,98 @@ nav {
 
 /* Features section end */
 
+/* Testimonials section start */
+
+#testimonials {
+    position: relative;
+}
+
+/* .custom-shape-divider-bottom-1663711324 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-bottom-1663711324 svg {
+    position: relative;
+    display: block;
+    width: calc(179% + 1.3px);
+    height: 270px;
+}
+
+.custom-shape-divider-bottom-1663711324 .shape-fill {
+    fill: #145DA0;
+} */
+
+.custom-shape-divider-bottom-1663711479 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-bottom-1663711479 svg {
+    position: relative;
+    display: block;
+    width: calc(210% + 1.3px);
+    height: 400px;
+}
+
+.custom-shape-divider-bottom-1663711479 .shape-fill {
+    fill: #145DA0;
+}
+
+.testimonials-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.testimonial-tile {
+    max-width: 400px;
+    /* border: 1px solid rgba(221, 221, 221, 0.8); */
+    border-radius: 1rem;
+    padding: 3.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.testimonial-tile img {
+    max-width: 64px;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.testimonial-author {
+    padding-top: 1rem;
+    border-top: 2px solid #ccc;
+    font-size: 1.7rem;
+}
+
+.testimonial-status {
+    color: #A0AEC0;
+    font-size: 1.3rem;
+}
+
+/* Testimonials section end */
 
 @keyframes fly {
     0% {
