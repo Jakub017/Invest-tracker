@@ -21,7 +21,6 @@
 
 <body>
     <header>
-
         <nav>
             <div class="menu-wrapper">
                 <div class="logo">
@@ -269,6 +268,48 @@
                 </ul>
             </div>
         </section>
+    </section>
+    <section id="contact">
+        <h5 class="section-subtitle">Support</h5>
+        <h1 class="section-title">Don't hesitate to <span class="colored">contact us</span></h1>
+        <div class="form-wrapper">
+            <div class="form-info">
+                <h3>Let's get in touch</h3>
+                <h6>We're open for any suggestion or just to have a chat</h6>
+                <div class="form-icons">
+                    <div class="icon-wrapper">
+                        <div class="icon-circle">
+                            <img src="{{ asset('img/mail.png') }}" alt="">
+                        </div>
+                        <p>contact@invest-tracker.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-inputs">
+                <h2>Get in touch</h2>
+                <form action="">
+                    <div class="two-inputs">
+                        <div class="input-wrapper">
+                            <label for="name">Full name</label>
+                            <input name="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email">Email address</label>
+                            <input name="email" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="subject">Subject</label>
+                        <input name="subject" type="text" placeholder="Subject">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message">Message</label>
+                        <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <input class="send-msg" type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
     </section>
     <script src="{{ asset('js/splide.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
