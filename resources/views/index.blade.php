@@ -30,16 +30,16 @@
                     <a href="#how">
                         <li class="menu-item">How it works</li>
                     </a>
-                    <a href="#how">
+                    <a href="#features">
                         <li class="menu-item">Features</li>
                     </a>
                     <a href="#testimonials">
                         <li class="menu-item">Testimonials</li>
                     </a>
-                    <a href="#">
+                    <a href="#contact">
                         <li class="menu-item">Support</li>
                     </a>
-                    <li class="menu-item last"><a href="#">Login</a> / <a href="#">Register</a></li>
+                    <li class="menu-item last"><a href="/login">Login</a> / <a href="/register">Register</a></li>
                 </ul>
             </div>
         </nav>
@@ -311,6 +311,9 @@
             </div>
         </div>
     </section>
+    <footer>
+
+    </footer>
     <script src="{{ asset('js/splide.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
