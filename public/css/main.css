@@ -109,8 +109,7 @@ nav {
     position: fixed;
     top: 0;
     background-color: #fff;
-    z-index: 1;
-    /* box-shadow: var(--box-shadow); */
+    z-index: 10;
 }
 
 .colored {
@@ -298,7 +297,6 @@ nav {
     background-color: #fff;
     border-radius: 1rem;
     text-align: center;
-    /* border: 1px solid rgba(221, 221, 221, 0.8); */
     box-shadow: var(--box-shadow);
     position: relative;
 }
@@ -385,28 +383,6 @@ nav {
 #testimonials {
     position: relative;
 }
-
-/* .custom-shape-divider-bottom-1663711324 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    z-index: -1;
-}
-
-.custom-shape-divider-bottom-1663711324 svg {
-    position: relative;
-    display: block;
-    width: calc(179% + 1.3px);
-    height: 270px;
-}
-
-.custom-shape-divider-bottom-1663711324 .shape-fill {
-    fill: #145DA0;
-} */
 
 .custom-shape-divider-bottom-1663711479 {
     position: absolute;
@@ -630,6 +606,87 @@ section.splide {
 .input-wrapper input:focus,
 .input-wrapper textarea:focus {
     border-color: var(--main-color);
+}
+
+footer {
+    position: relative;
+    padding-bottom: 0;
+    margin-top: 8rem;
+    background-color: var(--main-color);
+}
+
+.footer-top {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 2rem
+}
+
+.footer-top img {
+    width: 100%;
+    max-width: 225px;
+}
+
+.footer-top p {
+    color: #fff;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-top ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: .5rem;
+    color: #A0AEC0;
+    flex-wrap: wrap;
+}
+
+.footer-top ul li a {
+    text-decoration: none;
+    color: #A0AEC0;
+    font-size: 1.5rem;
+    transition: .3s ease-in-out;
+}
+
+.footer-top ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: #0D3F6E;
+}
+
+.footer-bottom p {
+    padding: 0;
+    color: #A0AEC0;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-bottom p span {
+    color: #A0AEC0;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Contact section end */

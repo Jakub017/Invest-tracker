@@ -51,22 +51,14 @@
                     cryptocurrencies - All prices are updated on a regular basis.
                 </p>
                 <div class="welcome-buttons">
-                    <a href="#">Try for free!</a>
-                    <a href="#">Discover more</a>
+                    <a href="/register">Try for free!</a>
+                    <a href="#how">Discover more</a>
                 </div>
             </div>
             <div class="welcome-image">
                 <img src="{{ asset('img/main.png') }}" alt="">
             </div>
         </div>
-        <!-- <div class="wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div> -->
         <div class="spacer layer1"></div>
     </header>
     <section id="how">
@@ -312,7 +304,23 @@
         </div>
     </section>
     <footer>
-
+        <div class="footer-top">
+            <img src="{{ asset('img/logo_white.png') }}" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga, rem recusandae excepturi quam
+                fugit repellat perspiciatis obcaecati blanditiis eaque consequuntur eos repudiandae eius voluptatem unde
+                cumque minus neque non!</p>
+            <ul>
+                <li><a href="#">How it works</a></li>/
+                <li><a href="#">Features</a></li>/
+                <li><a href="#">Testimonials</a></li>/
+                <li><a href="#">Support</a></li>/
+                <li><a href="#">Cookies policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; <span class="year"></span> Ivest-Tracker All Rights Reserved.</p>
+            <p>Designed by <a href="https://lipinskijakub.pl/" target="_blank">Jakub Lipiński</a></p>
+        </div>
     </footer>
     <script src="{{ asset('js/splide.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>

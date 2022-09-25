@@ -16,3 +16,9 @@
           }
       }
   }).mount());
+
+  const date = new Date();
+  const year = date.getFullYear();
+  const yearContainer = document.querySelector('span.year');
+
+  yearContainer.innerHTML = year;
